@@ -1,11 +1,3 @@
-//
-//  ViewController.m
-//  Calculator
-//
-//  Created by mo khan on 2013-05-20.
-//  Copyright (c) 2013 mo khan. All rights reserved.
-//
-
 #import "ViewController.h"
 
 @interface ViewController ()
@@ -26,4 +18,15 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(IBAction) numberPressed:(UIButton *)sender
+{
+}
+
+-(IBAction) operationPressed:(UIButton *)sender
+{
+}
+
+-(IBAction) enterPressed:(id)sender
+{
+}
 @end
