@@ -23,6 +23,7 @@
 		CD4CBEFE174B20A900B6DA7C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD4CBED9174B20A900B6DA7C /* Foundation.framework */; };
 		CD4CBF06174B20A900B6DA7C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CD4CBF04174B20A900B6DA7C /* InfoPlist.strings */; };
 		CD4CBF09174B20AA00B6DA7C /* CalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4CBF08174B20AA00B6DA7C /* CalculatorTests.m */; };
+		CDAF0243174B25850088CE1A /* Brain.m in Sources */ = {isa = PBXBuildFile; fileRef = CDAF0242174B25850088CE1A /* Brain.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		CD4CBF05174B20A900B6DA7C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CD4CBF07174B20AA00B6DA7C /* CalculatorTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalculatorTests.h; sourceTree = "<group>"; };
 		CD4CBF08174B20AA00B6DA7C /* CalculatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculatorTests.m; sourceTree = "<group>"; };
+		CDAF0241174B25850088CE1A /* Brain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Brain.h; sourceTree = "<group>"; };
+		CDAF0242174B25850088CE1A /* Brain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Brain.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +125,8 @@
 				CD4CBEEF174B20A900B6DA7C /* ViewController.h */,
 				CD4CBEF0174B20A900B6DA7C /* ViewController.m */,
 				CD4CBEF2174B20A900B6DA7C /* ViewController.xib */,
+				CDAF0241174B25850088CE1A /* Brain.h */,
+				CDAF0242174B25850088CE1A /* Brain.m */,
 				CD4CBEDE174B20A900B6DA7C /* Supporting Files */,
 			);
 			path = Calculator;
@@ -273,6 +278,7 @@
 				CD4CBEE4174B20A900B6DA7C /* main.m in Sources */,
 				CD4CBEE8174B20A900B6DA7C /* AppDelegate.m in Sources */,
 				CD4CBEF1174B20A900B6DA7C /* ViewController.m in Sources */,
+				CDAF0243174B25850088CE1A /* Brain.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,6 +459,7 @@
 				CD4CBF0E174B20AA00B6DA7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CD4CBF0F174B20AA00B6DA7C /* Build configuration list for PBXNativeTarget "CalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -461,6 +468,7 @@
 				CD4CBF11174B20AA00B6DA7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
