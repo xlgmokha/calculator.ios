@@ -56,4 +56,9 @@
   }
   return [lastObject doubleValue];
 }
+
+-(void) clear
+{
+  [self.arrOperands removeAllObjects];
+}
 @end

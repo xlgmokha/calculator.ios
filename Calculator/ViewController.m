@@ -13,7 +13,6 @@
     if (!self.myBrain)
     {
       self.myBrain = [[Brain alloc] init];
-      self.display.textAlignment = NSTextAlignmentRight;
     }
 	// Do any additional setup after loading the view, typically from a nib.
 }
@@ -51,5 +50,12 @@
 {
   [self.myBrain addObject:[self.display.text doubleValue]];
   self.enteringNumber = NO;
+}
+
+-(IBAction) clearPressed:(id)sender
+{
+  self.enteringNumber = NO;
+  self.display.text = @"0";
+  [self.myBrain clear];
 }
 @end

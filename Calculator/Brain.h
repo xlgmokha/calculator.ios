@@ -3,4 +3,5 @@
 @interface Brain : NSObject
 -(void) addObject:(double)operand;
 -(double) performOperation:(NSString *)operation;
+-(void) clear;
 @end

@@ -8,4 +8,5 @@
 -(IBAction) numberPressed:(id)sender;
 -(IBAction) operationPressed:(id)sender;
 -(IBAction) enterPressed:(id)sender;
+-(IBAction) clearPressed:(id)sender;
 @end
