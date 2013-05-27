@@ -13,6 +13,7 @@
     if (!self.myBrain)
     {
       self.myBrain = [[Brain alloc] init];
+      self.display.textAlignment = NSTextAlignmentRight;
     }
 	// Do any additional setup after loading the view, typically from a nib.
 }
