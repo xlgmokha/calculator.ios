@@ -7,26 +7,58 @@
 //
 
 #import "CalculatorTests.h"
+#import "Brain.h"
 
 @implementation CalculatorTests
+Brain * calculator;
 
 - (void)setUp
 {
     [super setUp];
-    
+    calculator = [[Brain alloc]init];
     // Set-up code here.
 }
 
 - (void)tearDown
 {
     // Tear-down code here.
-    
     [super tearDown];
 }
 
-- (void)testExample
+- (void)testAddition
 {
-    STFail(@"Unit tests are not implemented yet in CalculatorTests");
+    [calculator addObject:1];
+    [calculator addObject:1];
+    double result = [calculator performOperation:@"+"];
+    double expected = 2;
+    STAssertEquals(result, expected, @"Addition is broken");
+}
+
+- (void)testSubtraction
+{
+    [calculator addObject:10];
+    [calculator addObject:5];
+    double result = [calculator performOperation:@"-"];
+    double expected = 5;
+    STAssertEquals(result, expected, @"subtraction is hard");
+}
+
+- (void)testMultiplication
+{
+    [calculator addObject:10];
+    [calculator addObject:5];
+    double result = [calculator performOperation:@"x"];
+    double expected = 50;
+    STAssertEquals(result, expected, @"multiplication is hard");
+}
+
+- (void)testDivision
+{
+    [calculator addObject:10];
+    [calculator addObject:5];
+    double result = [calculator performOperation:@"/"];
+    double expected = 2;
+    STAssertEquals(result, expected, @"division is hard");
 }
 
 @end
